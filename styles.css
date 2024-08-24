@@ -1,3 +1,67 @@
+* {
+    box-sizing: border-box;
+    color: #223054;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+.header {
+    text-align: center;
+}
+
 h1 {
-    font-family: Tahoma, sans-serif;
+    margin-top: 2vh;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Dish Container  */
+.dish-container {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border: 5px solid;
+    border-color: black;
+    padding: 15px;
+    margin: 20px;
+}
+
+.dish-container h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.dish-container p {
+    text-align: justify; 
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+.dish-image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+.dish-container a {
+    display: block;
+    background-color: #EC2811;
+    color: white;
+    font-size: 2.5vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 18vh;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 0 auto;
 }
