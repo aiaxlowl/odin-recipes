@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #223054;
+    --container-bg: #f8f9eb;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: #fefff1;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Food Header */
+.food-header {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */ 
+    text-align: center;
+    width: 120vh;   
+    margin: 20px auto 0;  /* top, left-right, bottom (centers the div, with 20px margin top) */
+    border: 2px solid var(--text-color);
+    border-radius: 0.5rem;
+    background-color: var(--container-bg);
+}
+
+.food-header img {
+    width: 50vh;
+    height: 48vh;
+}
+
+.food-header .food-description {
+    display: inline-block;
+    height: auto;
+    width: 55vh;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.food-description h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.food-description p {
+    margin-top: 5px;  
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.food-header img, .food-description, .food-description h1, .food-description p {
+    background-color: var(--container-bg);
+}
+
+/* Food Section */
+.food-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* idk how tf this solved my issue */
+    margin: 20px;
+    gap: 20px;
+}
+
+.food-container {
+    display: inline-block;
+    margin-right: 30px;
+    width: 75vh;
+    height: auto;
+    padding: 10px;
+    line-height: 1.6;
+    border: 2px solid var(--text-color);
+    border-radius: 0.5rem;
+    text-align: justify;
+    background-color: var(--container-bg);
+} 
+
+.food-container h2, .food-container li {
+    background-color: var(--container-bg);
+}
+
+.food-container h2 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    background-color: var(--container-bg);
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li:before {
+    content: "● ";
+    font-size: 18px;
+    padding-right: 2px;
+    color: #EC2811;
+}
+
+/* Ordered List */
+
+
+a {
+    display: block;
+}

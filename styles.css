@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #223054;
+    --container-bg: #f8f9eb;
+}
+
 * {
     box-sizing: border-box;
     background-color: #fefff1;
-    color: #223054;
+    color: var(--text-color);
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
@@ -12,7 +19,6 @@
 }
 
 h1 {
-    margin-top: 16px;
     font-size: 55px;
     font-weight: 800;
     text-transform: uppercase;
@@ -30,11 +36,23 @@ p {
 }
 
 .dish-container {
+    background-color: var(--container-bg);
     display: inline-block;
     width: 63vh;
     height: auto;
     padding: 15px;
     margin: 15px;
+    /* border: 2px solid #dcdcdc; */
+    border: 2px solid var(--text-color);
+    border-radius: 0.5rem;
+}
+
+.dish-image, .dish-container h2, .dish-container p {
+    background-color: var(--container-bg);
+}
+
+.dish-container:hover {
+    border-color: #a0a0a0;
 }
 
 .dish-image {
@@ -76,20 +94,32 @@ p {
 }
 
 a:hover {
-    color: #223054;
     background-color: #BDBDBD;
 }
 
 /* Mini Footer */
 .mini-footer {
     text-align: right;
+    padding-right: 20px;
 }
 
 .mini-footer h3 {
-    padding: 10px;
     font-weight: 600;
 }
 
-em {
-    font-weight: 700;
+.github-link {
+    display: inline-block;
+}
+
+.github-link img {
+    /* removes small gap between anchor and image */
+    display: block;    
+    /* responsive design */
+    max-width: 100%;
+    height: auto;
+}
+
+.mini-footer img {
+    width: 6vh;
+    height: 6vh;
 }
