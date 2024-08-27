@@ -18,7 +18,8 @@
     justify-content: center; /* Centers the items horizontally */
     align-items: center; /* Centers the items vertically */ 
     text-align: center;
-    width: 120vh;   
+    width: 115vh;
+    height: 48vh;   
     margin: 20px auto 0;  /* top, left-right, bottom (centers the div, with 20px margin top) */
     border: 2px solid var(--text-color);
     border-radius: 0.5rem;
@@ -26,8 +27,8 @@
 }
 
 .food-header img {
-    width: 50vh;
-    height: 48vh;
+    width: 48vh;
+    height: 46vh;
 }
 
 .food-header .food-description {
@@ -77,20 +78,23 @@
     background-color: var(--container-bg);
 } 
 
-.food-container h2, .food-container li {
+.food-container h2, .food-container li, li b {
     background-color: var(--container-bg);
 }
 
+/* Header 2 */
 .food-container h2 {
     margin: 0;
 }
 
+
+/* List (ordered and unordered) */
 ul, ol {
     margin: 0;
     background-color: var(--container-bg);
 }
 
-ul li {
+ul li, ol li {
     list-style: none;
     font-size: 16px;
     margin: 0;
@@ -104,9 +108,33 @@ ul li:before {
     color: #EC2811;
 }
 
-/* Ordered List */
+.food-container ol {
+    counter-reset: my-counter;
+}
+
+ol li:before {
+    display: inline-block;
+    text-align: center;
+    counter-increment: my-counter;
+    content: counter(my-counter);
+    border-radius: 100%;
+    background-color:  #EC2811;
+    color: var(--container-bg);
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+li b {
+    font-weight: 600;
+}
 
 
+/* Anchor (back to the menu) */
 a {
     display: block;
+    padding-right: 10px;
+    text-align: right;
 }
