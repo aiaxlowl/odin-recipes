@@ -31,6 +31,11 @@
     height: 46vh;
 }
 
+.food-header #halo-halo-image {
+    width: 38vh;
+    margin-right: 6vh;
+}
+
 .food-header .food-description {
     display: inline-block;
     height: auto;
@@ -74,7 +79,6 @@
     line-height: 1.6;
     border: 2px solid var(--text-color);
     border-radius: 0.5rem;
-    text-align: justify;
     background-color: var(--container-bg);
 } 
 
@@ -104,6 +108,8 @@ ul li, ol li {
 ul li:before {
     content: "● ";
     font-size: 18px;
+    height: auto;
+    width: auto;
     padding-right: 2px;
     color: #EC2811;
 }
@@ -125,6 +131,10 @@ ol li:before {
     height: 24px;
     width: 24px;
     margin-right: 10px;
+}
+
+ol li {
+    text-align: justify;
 }
 
 li b {
